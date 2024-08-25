@@ -18,7 +18,7 @@ EternalFleshDecay is a plugin designed for the SCP: Secret Laboratory game, spec
 1. Download the latest release of the EternalFleshDecay plugin from the [releases page](#).
 2. Place the downloaded `.dll` file into the `plugins` folder of your SCP:SL Exiled server.
 3. Restart your server to load the plugin.
-4. Configure the plugin settings in the `config.yml` file located in the `plugins/EternalFleshDecay` directory.
+4. Configure the plugin settings in the `config.yml` file.
 
 ## Configuration
 
