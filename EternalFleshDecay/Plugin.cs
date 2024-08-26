@@ -22,7 +22,6 @@ namespace EternalFleshDecay
         {
             Scp3114.Disguising += OnDisguising;
             Scp3114.Disguised += OnDisguised;
-            Scp3114.Revealed += OnRevealed;
 
             base.OnEnabled();
         }
