@@ -15,12 +15,13 @@ namespace EternalFleshDecay
         public override string Name { get; } = "EternalFleshDecay";
         public override string Prefix { get; } = "EternalFleshDecay";
 
-        public override System.Version Version { get; } = new System.Version(1, 0, 0);
+        public override System.Version Version { get; } = new System.Version(1, 0, 1);
         public override System.Version RequiredExiledVersion { get; } = new System.Version(8, 9, 11);
         public override PluginPriority Priority { get; } = PluginPriority.Medium;
 
         public override void OnEnabled()
         {
+            // Subscribe to the event
             Scp3114.Disguising += OnDisguising;
             Scp3114.Disguised += OnDisguised;
             Exiled.Events.Handlers.Player.PickingUpItem += OnPickingUpItem;
@@ -30,6 +31,7 @@ namespace EternalFleshDecay
 
         public override void OnDisabled()
         {
+            // Unsubscribe from the event
             Scp3114.Disguising -= OnDisguising;
             Scp3114.Disguised -= OnDisguised;
             Exiled.Events.Handlers.Player.PickingUpItem -= OnPickingUpItem;
